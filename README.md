@@ -74,3 +74,33 @@ sudo a2enmod lbmethod_byrequests
 sudo systemctl restart apache2
 
 ```
+
+```
+sudo nano /etc/apache2/sites-available/proxy-host.conf
+
+<VirtualHost *:80>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /home/demo/
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+  ProxyPreserveHost On
+  # Servers to proxy the connection, or
+  # List of application servers Usage
+  ProxyPass / http://server-ip-address:8080/
+  ProxyPassReverse / http://server-ip-address:8080/
+  ServerName localhost
+</VirtualHost>
+
+ cd /etc/apache2/sites-available/
+ 
+ sudo a2ensite proxy-host
+ sudo a2dissite 000-default
+ sudo service apache2 reload
+ 
+ sudo nano /etc/apache2/ports.conf
+ Listen 8080
+ sudo /etc/init.d/apache2 restart
+ 
+
+
+```
