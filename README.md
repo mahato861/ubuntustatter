@@ -16,7 +16,7 @@ export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL=en_US.UTF-8
 
-sodo /etc/default/locale
+sudo nano /etc/default/locale
 
 LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
