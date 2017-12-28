@@ -40,6 +40,14 @@ sudo apt-get update
 
 sudo apt-get install -y build-essential
 
+sudo apt-get install openjdk-8-jre
+
+sudo nano /etc/environment
+
+JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+
+source /etc/environment
+
 sudo adduser demo
 
 sudo gpasswd -a demo sudo
