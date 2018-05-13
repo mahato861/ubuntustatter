@@ -31,3 +31,5 @@ export LC_TELEPHONE="en_US.UTF-8"\n
 export LC_MEASUREMENT="en_US.UTF-8"\n
 export LC_IDENTIFICATION="en_US.UTF-8"\n
 export LC_ALL=en_US.UTF-8" > '/etc/default/locale'
+
+sudo locale-gen en_US.UTF-8 && sudo apt-get update 
