@@ -1,4 +1,11 @@
-# ubuntu installation essentials
+# run this line into your machine console using root permission 
+
+```
+curl -sL https://raw.githubusercontent.com/prabhatpankaj/ubuntustarter/master/initial.sh | sh
+
+```
+
+# ubuntu installation essentials mannually
 ```
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
@@ -37,6 +44,7 @@ LC_ALL=en_US.UTF-8
 sudo locale-gen en_US.UTF-8
 
 sudo apt-get update
+
 
 sudo apt-get install -y build-essential
 
