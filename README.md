@@ -1,4 +1,4 @@
-# run this line into your machine console using root permission 
+# run this command line into your machine console using root permission 
 
 ```
 curl -sL https://raw.githubusercontent.com/prabhatpankaj/ubuntustarter/master/initial.sh | sh
