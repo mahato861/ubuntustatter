@@ -1,7 +1,7 @@
 # run this command line into your machine console using root permission 
 
 ```
-curl -sL https://raw.githubusercontent.com/prabhatpankaj/ubuntustarter/master/initial.sh | sh
+curl -sL https://raw.githubusercontent.com/mahato861/ubuntustarter/master/initial.sh | sh
 
 ```
 
